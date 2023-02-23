@@ -29,6 +29,17 @@ paths:
                 access_code: AVZQ37JK11BP44QZPB
                 enc_request: >-
                   1ed9fd1ff5964568f5b8768e9f865db34d123bcea008f2db3a4ecdbd5db40b48ab647474317bda2ed76cba5820ffe1e2bb6304df4b8bc4fa0ecfa4f316057389
+      parameters:
+        - name: Origin
+          in: header
+          schema:
+            type: string
+          example: '*'
+        - name: Access-Control-Request-Headers
+          in: header
+          schema:
+            type: string
+          example: application/json
       responses:
         '200':
           description: OK
@@ -475,6 +486,177 @@ paths:
       summary: Test Api
       responses:
         '200':
-          description: Successful response
+          description: OK
+          headers:
+            Date:
+              schema:
+                type: string
+                example: Thu, 23 Feb 2023 18:21:55 GMT
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Transfer-Encoding:
+              schema:
+                type: string
+                example: chunked
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Cache-Control:
+              schema:
+                type: string
+                example: max-age=0, private, must-revalidate
+            etag:
+              schema:
+                type: string
+                example: W/"3681f504588f1aba888f200abfa61517"
+            referrer-policy:
+              schema:
+                type: string
+                example: strict-origin-when-cross-origin
+            vary:
+              schema:
+                type: string
+                example: Origin
+            x-content-type-options:
+              schema:
+                type: string
+                example: nosniff
+            x-download-options:
+              schema:
+                type: string
+                example: noopen
+            x-frame-options:
+              schema:
+                type: string
+                example: SAMEORIGIN
+            x-links-current:
+              schema:
+                type: string
+                example: https://gorest.co.in/public/v2/users?page=1
+            x-links-next:
+              schema:
+                type: string
+                example: https://gorest.co.in/public/v2/users?page=2
+            x-links-previous:
+              schema:
+                type: string
+                example: ''
+            x-pagination-limit:
+              schema:
+                type: integer
+                example: '10'
+            x-pagination-page:
+              schema:
+                type: integer
+                example: '1'
+            x-pagination-pages:
+              schema:
+                type: integer
+                example: '250'
+            x-pagination-total:
+              schema:
+                type: integer
+                example: '2500'
+            x-permitted-cross-domain-policies:
+              schema:
+                type: string
+                example: none
+            x-request-id:
+              schema:
+                type: string
+                example: c894aa6d-2665-40ff-b79f-6f38ccd18651
+            x-runtime:
+              schema:
+                type: number
+                example: '0.037678'
+            x-xss-protection:
+              schema:
+                type: integer
+                example: '0'
+            CF-Cache-Status:
+              schema:
+                type: string
+                example: DYNAMIC
+            Report-To:
+              schema:
+                type: string
+                example: >-
+                  {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=jhwR%2BrCux0UKZ56wcqmlizhRJfqtTE1i6pclMLKpYXFVX10I8Cds4F3dg2DEHg%2B39puScFpu1w4ZM2Gqr66S8147DD6r9F5YK2a1BGe%2BcM9QvIiA1fokHdpiVubHJtI%3D"}],"group":"cf-nel","max_age":604800}
+            NEL:
+              schema:
+                type: string
+                example: '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+            Server:
+              schema:
+                type: string
+                example: cloudflare
+            CF-RAY:
+              schema:
+                type: string
+                example: 79e1fbe79e178e57-KTM
+            Content-Encoding:
+              schema:
+                type: string
+                example: br
+            alt-svc:
+              schema:
+                type: string
+                example: h3=":443"; ma=86400, h3-29=":443"; ma=86400
           content:
-            application/json: {}
+            application/json:
+              schema:
+                type: object
+              example:
+                - id: 577270
+                  name: Guru Trivedi
+                  email: guru_trivedi@batz.com
+                  gender: female
+                  status: active
+                - id: 576670
+                  name: Durgeshwari Varrier
+                  email: varrier_durgeshwari@romaguera-murray.co
+                  gender: male
+                  status: inactive
+                - id: 576669
+                  name: Ujjwal Nehru MD
+                  email: ujjwal_md_nehru@windler-konopelski.co
+                  gender: female
+                  status: active
+                - id: 576667
+                  name: Javas Panicker
+                  email: panicker_javas@weissnat.name
+                  gender: male
+                  status: inactive
+                - id: 576665
+                  name: Prof. Anang Guha
+                  email: guha_anang_prof@huels.io
+                  gender: female
+                  status: inactive
+                - id: 576664
+                  name: Gati Arora
+                  email: arora_gati@lockman-konopelski.net
+                  gender: female
+                  status: inactive
+                - id: 576319
+                  name: Chandradev Saini
+                  email: saini_chandradev@wyman.info
+                  gender: male
+                  status: inactive
+                - id: 575646
+                  name: Baidehi Mehra
+                  email: baidehi_mehra@runte.name
+                  gender: female
+                  status: active
+                - id: 575645
+                  name: Dayaamay Varma V
+                  email: v_varma_dayaamay@conn.com
+                  gender: male
+                  status: active
+                - id: 575345
+                  name: Girik Iyengar
+                  email: iyengar_girik@fahey-pouros.name
+                  gender: male
+                  status: inactive

@@ -24,6 +24,16 @@
 						"value": "application/json",
 						"type": "text",
 						"disabled": true
+					},
+					{
+						"key": "Origin",
+						"value": "*",
+						"type": "text"
+					},
+					{
+						"key": "Access-Control-Request-Headers",
+						"value": "application/json",
+						"type": "text"
 					}
 				],
 				"body": {
@@ -766,7 +776,152 @@
 					]
 				}
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Test Api",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://gorest.co.in/public/v2/users",
+							"protocol": "https",
+							"host": [
+								"gorest",
+								"co",
+								"in"
+							],
+							"path": [
+								"public",
+								"v2",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 23 Feb 2023 18:21:55 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "max-age=0, private, must-revalidate"
+						},
+						{
+							"key": "etag",
+							"value": "W/\"3681f504588f1aba888f200abfa61517\""
+						},
+						{
+							"key": "referrer-policy",
+							"value": "strict-origin-when-cross-origin"
+						},
+						{
+							"key": "vary",
+							"value": "Origin"
+						},
+						{
+							"key": "x-content-type-options",
+							"value": "nosniff"
+						},
+						{
+							"key": "x-download-options",
+							"value": "noopen"
+						},
+						{
+							"key": "x-frame-options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "x-links-current",
+							"value": "https://gorest.co.in/public/v2/users?page=1"
+						},
+						{
+							"key": "x-links-next",
+							"value": "https://gorest.co.in/public/v2/users?page=2"
+						},
+						{
+							"key": "x-links-previous",
+							"value": ""
+						},
+						{
+							"key": "x-pagination-limit",
+							"value": "10"
+						},
+						{
+							"key": "x-pagination-page",
+							"value": "1"
+						},
+						{
+							"key": "x-pagination-pages",
+							"value": "250"
+						},
+						{
+							"key": "x-pagination-total",
+							"value": "2500"
+						},
+						{
+							"key": "x-permitted-cross-domain-policies",
+							"value": "none"
+						},
+						{
+							"key": "x-request-id",
+							"value": "c894aa6d-2665-40ff-b79f-6f38ccd18651"
+						},
+						{
+							"key": "x-runtime",
+							"value": "0.037678"
+						},
+						{
+							"key": "x-xss-protection",
+							"value": "0"
+						},
+						{
+							"key": "CF-Cache-Status",
+							"value": "DYNAMIC"
+						},
+						{
+							"key": "Report-To",
+							"value": "{\"endpoints\":[{\"url\":\"https:\\/\\/a.nel.cloudflare.com\\/report\\/v3?s=jhwR%2BrCux0UKZ56wcqmlizhRJfqtTE1i6pclMLKpYXFVX10I8Cds4F3dg2DEHg%2B39puScFpu1w4ZM2Gqr66S8147DD6r9F5YK2a1BGe%2BcM9QvIiA1fokHdpiVubHJtI%3D\"}],\"group\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "NEL",
+							"value": "{\"success_fraction\":0,\"report_to\":\"cf-nel\",\"max_age\":604800}"
+						},
+						{
+							"key": "Server",
+							"value": "cloudflare"
+						},
+						{
+							"key": "CF-RAY",
+							"value": "79e1fbe79e178e57-KTM"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "br"
+						},
+						{
+							"key": "alt-svc",
+							"value": "h3=\":443\"; ma=86400, h3-29=\":443\"; ma=86400"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 577270,\n        \"name\": \"Guru Trivedi\",\n        \"email\": \"guru_trivedi@batz.com\",\n        \"gender\": \"female\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 576670,\n        \"name\": \"Durgeshwari Varrier\",\n        \"email\": \"varrier_durgeshwari@romaguera-murray.co\",\n        \"gender\": \"male\",\n        \"status\": \"inactive\"\n    },\n    {\n        \"id\": 576669,\n        \"name\": \"Ujjwal Nehru MD\",\n        \"email\": \"ujjwal_md_nehru@windler-konopelski.co\",\n        \"gender\": \"female\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 576667,\n        \"name\": \"Javas Panicker\",\n        \"email\": \"panicker_javas@weissnat.name\",\n        \"gender\": \"male\",\n        \"status\": \"inactive\"\n    },\n    {\n        \"id\": 576665,\n        \"name\": \"Prof. Anang Guha\",\n        \"email\": \"guha_anang_prof@huels.io\",\n        \"gender\": \"female\",\n        \"status\": \"inactive\"\n    },\n    {\n        \"id\": 576664,\n        \"name\": \"Gati Arora\",\n        \"email\": \"arora_gati@lockman-konopelski.net\",\n        \"gender\": \"female\",\n        \"status\": \"inactive\"\n    },\n    {\n        \"id\": 576319,\n        \"name\": \"Chandradev Saini\",\n        \"email\": \"saini_chandradev@wyman.info\",\n        \"gender\": \"male\",\n        \"status\": \"inactive\"\n    },\n    {\n        \"id\": 575646,\n        \"name\": \"Baidehi Mehra\",\n        \"email\": \"baidehi_mehra@runte.name\",\n        \"gender\": \"female\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 575645,\n        \"name\": \"Dayaamay Varma V\",\n        \"email\": \"v_varma_dayaamay@conn.com\",\n        \"gender\": \"male\",\n        \"status\": \"active\"\n    },\n    {\n        \"id\": 575345,\n        \"name\": \"Girik Iyengar\",\n        \"email\": \"iyengar_girik@fahey-pouros.name\",\n        \"gender\": \"male\",\n        \"status\": \"inactive\"\n    }\n]"
+				}
+			]
 		}
 	]
 }
