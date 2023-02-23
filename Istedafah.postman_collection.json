@@ -1,0 +1,750 @@
+{
+	"info": {
+		"_postman_id": "b80d54c6-71e4-4ab2-a0d2-00c8ccb018ca",
+		"name": "Istedafah",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10974618"
+	},
+	"item": [
+		{
+			"name": "Enc Request(Status API)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {\n        \"access_code\": \"AVZQ37JK11BP44QZPB\",\n        \"enc_request\": \"1ed9fd1ff5964568f5b8768e9f865db34d123bcea008f2db3a4ecdbd5db40b48ab647474317bda2ed76cba5820ffe1e2bb6304df4b8bc4fa0ecfa4f316057389\"\n        \n    }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://certsecurepayment.bdpg.bankdhofar.com/wrapper/api/fetchStatus/json",
+					"protocol": "https",
+					"host": [
+						"certsecurepayment",
+						"bdpg",
+						"bankdhofar",
+						"com"
+					],
+					"path": [
+						"wrapper",
+						"api",
+						"fetchStatus",
+						"json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Enc Request(Status API)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n    {\n        \"access_code\": \"AVZQ37JK11BP44QZPB\",\n        \"enc_request\": \"1ed9fd1ff5964568f5b8768e9f865db34d123bcea008f2db3a4ecdbd5db40b48ab647474317bda2ed76cba5820ffe1e2bb6304df4b8bc4fa0ecfa4f316057389\"\n        \n    }\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://certsecurepayment.bdpg.bankdhofar.com/wrapper/api/fetchStatus/json",
+							"protocol": "https",
+							"host": [
+								"certsecurepayment",
+								"bdpg",
+								"bankdhofar",
+								"com"
+							],
+							"path": [
+								"wrapper",
+								"api",
+								"fetchStatus",
+								"json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 04:05:42 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31622400; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-FRAME-OPTIONS",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "style-src 'self' 'unsafe-inline' *.googleapis.com ; script-src 'self' *.jquery.com 'unsafe-inline' 'unsafe-eval' https: http:; style-src http: https: 'unsafe-inline'; img-src 'self' data: https:; connect-src http: https: ws:;"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "TS019c2817=014c919beed4d8fe7f8a057da4dfb5d943153e08bb3c15ce82ebd8e9ee8922da569329cdaee1610a3d9c1d798374ced2d86d8051e7; Path=/"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg_status\": \"0\",\n    \"msg_desc\": \"VALIDATED\",\n    \"enc_response\": \"1819ef6270fe5a34868d3d91eee7f8df9cae9111ef9edb651c683ad8f669b8883e24a98888373e5bd33e19f0179445858df969a786989c3c429a72b7f461dbbf76a78be2d5a9d169ceae96f729ecfd7091e75e49763b2d10f07077493d079a7498f63ffd9d79c708aa17ecdfc9255a565bd3650152a9965107e664606d0f01ecd34ac981c98435aefafa42a78301b17dc3dd5ea6667936a34db1912eb4ff829ebe244875fdf93a750385dc60bf236bc317f17456c74460ed27279c9ae4422575ab642a413ddc20b38f48696af2ef9589ef08ec8413b336ebfc97bc38ef5b12704072bfaa3e72f07ebcc495db791ee335c047db70b624862a3e77b7a80bbbcb17820c6937d3f134449419eca053133fe72c36e4396d2e71418f18e9a61e95c7075441da860dbd24abde56cf19af8e1f6cb1330f21a6c8cec23381f8f41e5e3ba71dff8efebd511ac97fbc04b65addf2fcb08a612bd352824ae2d466e74eac7b9b11cf8cb248931c251e3453f4c5943a3ed412cf38e1d4334814fda5ab5e5a0ab0a4ee2abc72376ca7ed9ac3ef445ac52d432d172c77554fd6b64aefd9b5b8cfa5b0ebfceab77c9406c04de245d7cbb3fd44f1f9e9939a0b6d924ab2cd77104381cb3ff0b576dadf30982b8e2b62ceee37\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Capture API",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"access_code\": \"AVZQ37JK11BP44QZPB\",\n    \"enc_request\": \"031b2929fbc8b3d710b659709036ebcfd75c9f8180501b657f2d6f57b809b596cd2ce1fc47a550ac7ee52d4093de01a9ee80cc1c50833623cd0f3400f9c46d1926cdbec7fcaf6dbd4a23ed2500f330ff745ca909328dfd0f1850ab00b5ba249ab63ad17f588cd57344a8dccc3710a4c9d34d3124477e166af97e7c7f074fc5ed55c40042be12946b3e14ebe5e6c9b31b\"\n    \n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://certsecurepayment.bdpg.bankdhofar.com/wrapper/api/captureTxn/json",
+					"protocol": "https",
+					"host": [
+						"certsecurepayment",
+						"bdpg",
+						"bankdhofar",
+						"com"
+					],
+					"path": [
+						"wrapper",
+						"api",
+						"captureTxn",
+						"json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Capture API",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"access_code\": \"AVZQ37JK11BP44QZPB\",\n    \"enc_request\": \"9815b7a45966165772cd8df0db67f121584de78102696739a71a976c9e0bedcf12ec34e9f58368733511c8c4d3c3a125ee646d1dbb635472c1bf6e1be10f8c32a0ee0c444b3a5a8b2aa3576a0fdae3ae607c898bd1e06fa90b684258efe1e01e62731ab7e76b3cfff47875bb58be2710110a6fcd223ca4374d2affae7921f736547a940b4fde0e305b799058f289fa2b\"\n    \n\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://certsecurepayment.bdpg.bankdhofar.com/wrapper/api/captureTxn/json",
+							"protocol": "https",
+							"host": [
+								"certsecurepayment",
+								"bdpg",
+								"bankdhofar",
+								"com"
+							],
+							"path": [
+								"wrapper",
+								"api",
+								"captureTxn",
+								"json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 04:53:12 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31622400; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-FRAME-OPTIONS",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "style-src 'self' 'unsafe-inline' *.googleapis.com ; script-src 'self' *.jquery.com 'unsafe-inline' 'unsafe-eval' https: http:; style-src http: https: 'unsafe-inline'; img-src 'self' data: https:; connect-src http: https: ws:;"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg_status\": \"60001\",\n    \"msg_desc\": \"INVALID_JSON_MSG_FORMAT\",\n    \"enc_response\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Refund API",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"access_code\": \"AVZQ37JK11BP44QZPB\",\n    \"enc_request\": \"6aea4b0e6f5596d699a229c885fbe3db1135aaf2d5f8dfaab7b52dac917837e9b509628bdab3761e15a49ffed34703c555ef9870be8d29e9f5da1dc6b405e7f8a2e6144963b83048877399c03bb38740fa11f197ca838447c50784be35406e145ac5cd63d11a270164b647fe07fdd55bcf8b27278f52a9323f5f454a31073284a58f09a38591d3e96268d1138dc736be\"\n}"
+				},
+				"url": {
+					"raw": "https://certsecurepayment.bdpg.bankdhofar.com/wrapper/api/refundTxn/json",
+					"protocol": "https",
+					"host": [
+						"certsecurepayment",
+						"bdpg",
+						"bankdhofar",
+						"com"
+					],
+					"path": [
+						"wrapper",
+						"api",
+						"refundTxn",
+						"json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Refund API",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"access_code\": \"AVZQ37JK11BP44QZPB\",\n    \"enc_request\": \"6aea4b0e6f5596d699a229c885fbe3db1135aaf2d5f8dfaab7b52dac917837e9b509628bdab3761e15a49ffed34703c555ef9870be8d29e9f5da1dc6b405e7f8a2e6144963b83048877399c03bb38740fa11f197ca838447c50784be35406e145ac5cd63d11a270164b647fe07fdd55bcf8b27278f52a9323f5f454a31073284a58f09a38591d3e96268d1138dc736be\"\n}"
+						},
+						"url": {
+							"raw": "https://certsecurepayment.bdpg.bankdhofar.com/wrapper/api/refundTxn/json",
+							"protocol": "https",
+							"host": [
+								"certsecurepayment",
+								"bdpg",
+								"bankdhofar",
+								"com"
+							],
+							"path": [
+								"wrapper",
+								"api",
+								"refundTxn",
+								"json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 04:52:57 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31622400; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-FRAME-OPTIONS",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "style-src 'self' 'unsafe-inline' *.googleapis.com ; script-src 'self' *.jquery.com 'unsafe-inline' 'unsafe-eval' https: http:; style-src http: https: 'unsafe-inline'; img-src 'self' data: https:; connect-src http: https: ws:;"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "TS019c2817=014c919bee015be147514575a752c84fb65aa9009fb68f709f77cab0779dbf77452d4bae049533c74750743649edf95d8cd99b5d48; Path=/"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg_status\": \"60001\",\n    \"msg_desc\": \"INVALID_JSON_MSG_FORMAT\",\n    \"enc_response\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Void Api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"access_code\": \"AVZQ37JK11BP44QZPB\",\n    \"enc_request\": \"6aea4b0e6f5596d699a229c885fbe3db1135aaf2d5f8dfaab7b52dac917837e9b509628bdab3761e15a49ffed34703c555ef9870be8d29e9f5da1dc6b405e7f8a2e6144963b83048877399c03bb38740fa11f197ca838447c50784be35406e145ac5cd63d11a270164b647fe07fdd55bcf8b27278f52a9323f5f454a31073284a58f09a38591d3e96268d1138dc736be\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://certsecurepayment.bdpg.bankdhofar.com/wrapper/api/voidTxn/json",
+					"protocol": "https",
+					"host": [
+						"certsecurepayment",
+						"bdpg",
+						"bankdhofar",
+						"com"
+					],
+					"path": [
+						"wrapper",
+						"api",
+						"voidTxn",
+						"json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Void Api",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"access_code\": \"AVZQ37JK11BP44QZPB\",\n    \"enc_request\": \"6aea4b0e6f5596d699a229c885fbe3db1135aaf2d5f8dfaab7b52dac917837e9b509628bdab3761e15a49ffed34703c555ef9870be8d29e9f5da1dc6b405e7f8a2e6144963b83048877399c03bb38740fa11f197ca838447c50784be35406e145ac5cd63d11a270164b647fe07fdd55bcf8b27278f52a9323f5f454a31073284a58f09a38591d3e96268d1138dc736be\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://certsecurepayment.bdpg.bankdhofar.com/wrapper/api/voidTxn/json",
+							"protocol": "https",
+							"host": [
+								"certsecurepayment",
+								"bdpg",
+								"bankdhofar",
+								"com"
+							],
+							"path": [
+								"wrapper",
+								"api",
+								"voidTxn",
+								"json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 04:36:22 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31622400; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-FRAME-OPTIONS",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "style-src 'self' 'unsafe-inline' *.googleapis.com ; script-src 'self' *.jquery.com 'unsafe-inline' 'unsafe-eval' https: http:; style-src http: https: 'unsafe-inline'; img-src 'self' data: https:; connect-src http: https: ws:;"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg_status\": \"0\",\n    \"msg_desc\": \"VALIDATED\",\n    \"enc_response\": \"497c624f43f6d21273048dedeacd84ebd0bb6993efcc57b5a6e50b3bf60258040daa52fd328c7c00ea5df66b254bf7c1b1a602aecb9eaccf769571321fb2869e80ce1f046d30566fa7a3fa0fa522b538e8bbf140524a1d112c86eaf2aa90506f8e5e6912441b876965f948ae68095187d32b4fc188d8d2dfc578279e99086401d888475bcdf37bd3d48093a5e47af757b0722ba3eeb9aad2e89ff11981cf2a02308c790092c3f6082ef096e52139e088f8724fb4d3817a13621cfb2e7496540a7e55d8496f4530a4799aed8d199a8c6f9e5d0751b1caa0775fdb44182050d402666e316ddc706ae8f80c1aa40ddaf221e22cccec19dd3126460be88dd1c926b17c5c9e979950878742c8cd7551e4e2d8\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Moto API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"access_code\": \"AVZQ37JK11BP44QZPB\",\n    \"enc_request\": \"ce49880828f4c2e59b04bdd90f7898cd5331e88aea0e816c34aa60f8cc5a29e6de2834769899b69945268e7fb0d04bdcd133a2919c45ff8fc57bad2ff372a062e9bc31059adfc604d4f147ecb38bd5b6e85ead13d37b1382f5b475f31aafb1497e7d1896c2b7a0f5419a93a1127d8384d316fa340649c530dabe26d84392d63ca2aa5ce22692c5ab07604474112df4c9f73b15158440d6ceef4aa6bad28d63d326ee2f65fdbf6e3f5c8274def5c022ec6505436965ef97c18d830dd58009b20dca5cf4cf73a096de7931d6f604b00306394f635ec4d5799a03736fb4361e543cf70c572bb5406e22553bb65b72c0d6bdfaa63bc23929ea8abdc1a56a508c7f981e7f90495e9aa90d8fdd6959bd8f99997c8b866c0f5af3850be42989f5198e89535404666b741ed70ec8401a40f7bc2e\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://certsecurepayment.bdpg.bankdhofar.com/wrapper/api/motoTxn/json",
+					"protocol": "https",
+					"host": [
+						"certsecurepayment",
+						"bdpg",
+						"bankdhofar",
+						"com"
+					],
+					"path": [
+						"wrapper",
+						"api",
+						"motoTxn",
+						"json"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Moto API",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"access_code\": \"AVZQ37JK11BP44QZPB\",\n    \"enc_request\": \"ce49880828f4c2e59b04bdd90f7898cd5331e88aea0e816c34aa60f8cc5a29e6de2834769899b69945268e7fb0d04bdcd133a2919c45ff8fc57bad2ff372a062e9bc31059adfc604d4f147ecb38bd5b6e85ead13d37b1382f5b475f31aafb1497e7d1896c2b7a0f5419a93a1127d8384d316fa340649c530dabe26d84392d63ca2aa5ce22692c5ab07604474112df4c9f73b15158440d6ceef4aa6bad28d63d326ee2f65fdbf6e3f5c8274def5c022ec6505436965ef97c18d830dd58009b20dca5cf4cf73a096de7931d6f604b00306394f635ec4d5799a03736fb4361e543cf70c572bb5406e22553bb65b72c0d6bdfaa63bc23929ea8abdc1a56a508c7f981e7f90495e9aa90d8fdd6959bd8f99997c8b866c0f5af3850be42989f5198e89535404666b741ed70ec8401a40f7bc2e\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://certsecurepayment.bdpg.bankdhofar.com/wrapper/api/motoTxn/json",
+							"protocol": "https",
+							"host": [
+								"certsecurepayment",
+								"bdpg",
+								"bankdhofar",
+								"com"
+							],
+							"path": [
+								"wrapper",
+								"api",
+								"motoTxn",
+								"json"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 04:53:51 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31622400; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-FRAME-OPTIONS",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "style-src 'self' 'unsafe-inline' *.googleapis.com ; script-src 'self' *.jquery.com 'unsafe-inline' 'unsafe-eval' https: http:; style-src http: https: 'unsafe-inline'; img-src 'self' data: https:; connect-src http: https: ws:;"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5, max=100"
+						},
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"msg_status\": \"20011\",\n    \"msg_desc\": \"ORDER_ID_INVALID\",\n    \"enc_response\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Payment Initiation API",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"access_code\": \"AVZQ37JK11BP44QZPB\",\n    \"enc_request\": \"4c430f151869a4192978939d3ab3255a1894e8783e0cd52924ec2898106004c01f6310acf95b44e6496d99f27748be3340769e535634f1be30eefad81017b37c71c7d99f4476e2a14c322f5cf17bcadf92851af3c8d215a34429b94bf09c7d4d2e332b9aec6fa424c0dbd738e8c91b204f95f5522312acb80d25d04d216d49be4604153c332c5bda9f577f6d14855930874b6299f1a2d32981e7a8305066de6557f1eb0a49607f762d3fad22dc5b5c0cfc0bc9448ca4acc8ae59872b3ff209cc\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://certsecurepayment.bdpg.bankdhofar.com/wrapper/txn/initiatePayment",
+					"protocol": "https",
+					"host": [
+						"certsecurepayment",
+						"bdpg",
+						"bankdhofar",
+						"com"
+					],
+					"path": [
+						"wrapper",
+						"txn",
+						"initiatePayment"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Payment Initiation API",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"access_code\": \"AVZQ37JK11BP44QZPB\",\n    \"enc_request\": \"76541887d34e4ed65f782c0cb1f48d83a0e5dd2a785e3c8f6ef2159061ff0a7854dc4ccd9968a6ced584060cb4e7df098617cb23cbc0556878bcd385254f7f5ea6ec57ef6fb919830e60bdddf2d11cb3c0f56d81bb006910b1fc2f416e97bc7c4d468a4d98de7162413541cd384eef98d48f0e04cff86500e6e89408a6394e75a9ec86c691e68b853186a235161ce4c2895f06e7dbf4a9954666c701cccabb352574bb30dfc51ec936781bf4ec9b9ee7e5204be9be11e7535b7b4b7aa8f8adfeeaf9e85ad9faede29aaf5754e6d16390\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://certsecurepayment.bdpg.bankdhofar.com/wrapper/txn/initiatePayment",
+							"protocol": "https",
+							"host": [
+								"certsecurepayment",
+								"bdpg",
+								"bankdhofar",
+								"com"
+							],
+							"path": [
+								"wrapper",
+								"txn",
+								"initiatePayment"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 22 Feb 2023 05:14:18 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						},
+						{
+							"key": "X-FRAME-OPTIONS",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "Content-Security-Policy",
+							"value": "style-src 'self' 'unsafe-inline' *.googleapis.com ; script-src 'self' *.jquery.com 'unsafe-inline' 'unsafe-eval' https: http:; style-src http: https: 'unsafe-inline'; img-src 'self' data: https:; connect-src http: https: ws:;"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31622400; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1007"
+						},
+						{
+							"key": "Content-Language",
+							"value": "en-US"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html;charset=ISO-8859-1"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html>\n    <head>\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0\">\n        <meta name=\"description\" content=\"\">\n        <meta name=\"author\" content=\"\">\n        <title>Bank Dhofar</title>\n        <link href=\"https://fonts.googleapis.com/css?family=Open+Sans:400,600,700\" rel=\"stylesheet\">\n        <link rel=\"stylesheet\" href=\"/wrapper/css/style.css\">\n        <link rel=\"stylesheet\" href=\"/wrapper/css/theme.css\">\n        <link rel=\"stylesheet\" href=\"/wrapper/css/responsive.css\">\n        <style>\r\n\t\t\t.theme-input{\r\n\t\t\t\tposition: relative;\r\n\t\t\t\t z-index: 3;\r\n\t\t\t\t width: 200px;\r\n\t\t\t\t display: none;\r\n\t\t\t}\r\n\t\t\t.colorpicker{\r\n\t\t\t\t\tmax-width: 150px;\r\n\t\t\t}\r\n\t\t\tbody{\r\n\t\t\t\tbackground: #ffffff;\r\n\t\t\t}\r\n\t\t</style>\n    </head>\n    <body>\n        <div class=\"payment-popup-main\">\n            <div class=\"error-page\">\n                <img src=\"/wrapper/images/page-not-found.jpg\" alt=\"\">\n                <h6>Page not found!</h6>\n            </div>\n            <div class=\"powered-by\"></div>\n        </div>\n    </body>\n</html>"
+				}
+			]
+		}
+	]
+}
