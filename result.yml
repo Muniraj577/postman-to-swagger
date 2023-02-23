@@ -1,7 +1,16 @@
 openapi: 3.0.0
 info:
-  title: Istedafah
-  version: 1.0.0
+  title: Swagger
+  description: Swagger
+  version: '1.0'
+  x-logo:
+    url: https://github.com/joolfe/logoBanner.png
+    backgroundColor: '#FFFFFF'
+    altText: logo
+  termsOfService: '#'
+  license:
+    name: MIT
+    url: https://es.wikipedia.org/wiki/Licencia_MIT
 servers:
   - url: https://certsecurepayment.bdpg.bankdhofar.com
 paths:
